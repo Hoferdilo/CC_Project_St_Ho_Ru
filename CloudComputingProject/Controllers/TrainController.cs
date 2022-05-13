@@ -25,7 +25,7 @@ namespace CloudComputingProject.Controllers
         [HttpPost]
         public async Task<IActionResult> PostTrain([FromBody] TrainDto train)
         {
-            return Ok(_trainService.AddTrain(train));
+            return Ok(await _trainService.AddTrain(train));
         }
 
         [HttpPut("{id}")]
