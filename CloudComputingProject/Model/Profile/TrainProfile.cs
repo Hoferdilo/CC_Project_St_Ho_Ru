@@ -1,4 +1,6 @@
-﻿using CloudComputingProject.Model.Dto;
+﻿using Azure;
+using CloudComputingProject.Model.Dto;
+using Microsoft.JSInterop.Infrastructure;
 
 namespace CloudComputingProject.Model.Profile
 {
@@ -7,8 +9,10 @@ namespace CloudComputingProject.Model.Profile
         public TrainProfile()
         {
             CreateMap<TrainDto, Train>()
-                .ForMember(x => x.CreatedDateTime, opt => opt.Ignore())
-                .ForMember(x => x.ModifiedDateTime, opt => opt.Ignore());
+                .ForMember(x => x.Timestamp, opt => opt.Ignore())
+                .ForMember(x => x.RowKey, opt => opt.Ignore())
+                .ForMember(x => x.PartitionKey, opt => opt.MapFrom(dto => dto.Type))
+                .ForMember(x => x.ETag, opt => opt.MapFrom(dto => new ETag(dto.ETag)));
 
             CreateMap<Train, TrainDto>();
         }

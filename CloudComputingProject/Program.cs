@@ -1,4 +1,5 @@
 using CloudComputingProject.Model.Profile;
+using CloudComputingProject.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<TrainProfile>());
+builder.Services.AddTransient<ITrainService, TrainService>();
 
 var app = builder.Build();
 
