@@ -37,7 +37,7 @@ namespace CloudComputingProject.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTrain([FromRoute] Guid id, [FromBody] TrainDto train)
         {
-            return Ok(await _trainService.UpdateTrain(id, train));
+            return Ok(await _trainService.DeleteTrain(id, train));
         }
     }
 }
