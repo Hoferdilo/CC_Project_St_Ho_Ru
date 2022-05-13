@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hofer Julian\\Documents\\plated\\plated-backend\\src\\Services\\TemplateService\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj": {}
+    "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hofer Julian\\Documents\\plated\\plated-backend\\src\\Services\\TemplateService\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj": {
+    "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hofer Julian\\Documents\\plated\\plated-backend\\src\\Services\\TemplateService\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj",
+        "projectUniqueName": "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj",
         "projectName": "CloudComputingProject",
-        "projectPath": "C:\\Users\\Hofer Julian\\Documents\\plated\\plated-backend\\src\\Services\\TemplateService\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj",
+        "projectPath": "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj",
         "packagesPath": "C:\\Users\\Hofer Julian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hofer Julian\\Documents\\plated\\plated-backend\\src\\Services\\TemplateService\\CloudComputingProject\\CloudComputingProject\\obj\\",
+        "outputPath": "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hofer Julian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

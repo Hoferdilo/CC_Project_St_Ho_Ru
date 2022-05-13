@@ -1,15 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "4T8UPL4JWCXke4sKTz1EsN7+wTR8yX6hF+8o7LgdACxj9ZVr/823uMKV38jro7LTUdiVVhv5MOmkGbmdf+oOfQ==",
+  "dgSpecHash": "y2tKiS7w1TAm4Eu5nR5cclN4p0Ks0zhvJ8cFcGbvynhV/eh+Q7jMkQP61oiDk2MKbpPc0BBNPOWN5SjHJjfczg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hofer Julian\\Documents\\plated\\plated-backend\\src\\Services\\TemplateService\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj",
+  "projectFilePath": "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hofer Julian\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Hofer Julian\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Hofer Julian\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Hofer Julian\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Hofer Julian\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Hofer Julian\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Hofer Julian\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Hofer Julian\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Hofer Julian\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Hofer Julian\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\Hofer Julian\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\Hofer Julian\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    "C:\\Users\\Hofer Julian\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "C:\\Users\\Hofer Julian\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
