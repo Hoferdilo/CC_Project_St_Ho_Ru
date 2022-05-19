@@ -5,6 +5,10 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudComputingProject", "CloudComputingProject\CloudComputingProject.csproj", "{D9E06159-1D1A-40AC-B826-599AE2645FAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trainInQueue", "trainInQueue\trainInQueue.csproj", "{2189BBF5-C507-4979-94B8-E6369F8F4495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trainInBlob", "trainInBlob\trainInBlob.csproj", "{CFB44235-D141-4C85-9C4C-D933B86D5F23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D9E06159-1D1A-40AC-B826-599AE2645FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9E06159-1D1A-40AC-B826-599AE2645FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9E06159-1D1A-40AC-B826-599AE2645FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2189BBF5-C507-4979-94B8-E6369F8F4495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2189BBF5-C507-4979-94B8-E6369F8F4495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2189BBF5-C507-4979-94B8-E6369F8F4495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2189BBF5-C507-4979-94B8-E6369F8F4495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB44235-D141-4C85-9C4C-D933B86D5F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB44235-D141-4C85-9C4C-D933B86D5F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB44235-D141-4C85-9C4C-D933B86D5F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB44235-D141-4C85-9C4C-D933B86D5F23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

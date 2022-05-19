@@ -11,10 +11,13 @@ namespace CloudComputingProject.Service
     {
         private readonly TableClient _tableClient;
         private readonly IMapper _mapper;
+        private const string QUEUE_NAME = "mytrain";
+        private readonly IQueueService _queueService;
 
-        public TrainService(IMapper mapper)
+        public TrainService(IMapper mapper, IQueueService queueService)
         {
             _mapper = mapper;
+            _queueService = queueService ?? throw new ArgumentNullException(nameof(queueService));
             _tableClient = new TableClient("UseDevelopmentStorage=true", "train");
             _tableClient.CreateIfNotExists();
         }
@@ -64,6 +67,16 @@ namespace CloudComputingProject.Service
                 }
             }
             return result;
+        }
+        public async Task<TrainPictureDto> AddTrainPicture(TrainPictureDto trainpicture)
+        {
+            var trainPictureData = _mapper.Map<TrainPictureDto>(trainpicture);
+            trainPictureData.Id = Guid.NewGuid();
+            trainPictureData.file = trainpicture.file;
+            //Send to Queue
+            _queueService.SendMessage(QUEUE_NAME, trainPictureData.file);
+            //string picture = trainPictureData.file;
+            return _mapper.Map<TrainPictureDto>(trainPictureData);
         }
     }
 }

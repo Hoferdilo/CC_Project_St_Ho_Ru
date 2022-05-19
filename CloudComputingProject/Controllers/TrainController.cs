@@ -1,4 +1,5 @@
-﻿using CloudComputingProject.Model.Dto;
+﻿using System.Net;
+using CloudComputingProject.Model.Dto;
 using CloudComputingProject.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -38,6 +39,12 @@ namespace CloudComputingProject.Controllers
         public async Task<IActionResult> DeleteTrain([FromRoute] Guid id, [FromBody] TrainDto train)
         {
             return Ok(await _trainService.DeleteTrain(id, train));
+        }
+        [HttpPut]
+        [Route("/picture")]
+        public async Task<IActionResult> PostTrainPicture([FromBody] TrainPictureDto trainPicture)
+        {
+            return Ok(await _trainService.AddTrainPicture(trainPicture));
         }
     }
 }

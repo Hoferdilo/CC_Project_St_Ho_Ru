@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj": {}
+    "/Users/emanuelstoisser/Documents/repos/CC_Project_St_Ho_Ru/CloudComputingProject/CloudComputingProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj": {
+    "/Users/emanuelstoisser/Documents/repos/CC_Project_St_Ho_Ru/CloudComputingProject/CloudComputingProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj",
+        "projectUniqueName": "/Users/emanuelstoisser/Documents/repos/CC_Project_St_Ho_Ru/CloudComputingProject/CloudComputingProject.csproj",
         "projectName": "CloudComputingProject",
-        "projectPath": "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj",
-        "packagesPath": "C:\\Users\\Hofer Julian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\obj\\",
+        "projectPath": "/Users/emanuelstoisser/Documents/repos/CC_Project_St_Ho_Ru/CloudComputingProject/CloudComputingProject.csproj",
+        "packagesPath": "/Users/emanuelstoisser/.nuget/packages/",
+        "outputPath": "/Users/emanuelstoisser/Documents/repos/CC_Project_St_Ho_Ru/CloudComputingProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hofer Julian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/emanuelstoisser/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,9 +50,17 @@
               "target": "Package",
               "version": "[12.5.0, )"
             },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.12.0, )"
+            },
+            "Azure.Storage.Queues": {
+              "target": "Package",
+              "version": "[12.10.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.3.1, )"
             }
           },
           "imports": [
@@ -75,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

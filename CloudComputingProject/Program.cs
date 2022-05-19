@@ -11,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<TrainProfile>());
 builder.Services.AddTransient<ITrainService, TrainService>();
+builder.Services.AddTransient<IQueueService, QueueService>();
 
 var app = builder.Build();
 
