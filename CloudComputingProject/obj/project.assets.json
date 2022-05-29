@@ -950,24 +950,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/emanuelstoisser/.nuget/packages/": {}
+    "C:\\Users\\emanuel\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/emanuelstoisser/Documents/repos/CC_Project_St_Ho_Ru/CloudComputingProject/CloudComputingProject.csproj",
+      "projectUniqueName": "D:\\repos\\CC_Project_St_Ho\\CloudComputingProject\\CloudComputingProject.csproj",
       "projectName": "CloudComputingProject",
-      "projectPath": "/Users/emanuelstoisser/Documents/repos/CC_Project_St_Ho_Ru/CloudComputingProject/CloudComputingProject.csproj",
-      "packagesPath": "/Users/emanuelstoisser/.nuget/packages/",
-      "outputPath": "/Users/emanuelstoisser/Documents/repos/CC_Project_St_Ho_Ru/CloudComputingProject/obj/",
+      "projectPath": "D:\\repos\\CC_Project_St_Ho\\CloudComputingProject\\CloudComputingProject.csproj",
+      "packagesPath": "C:\\Users\\emanuel\\.nuget\\packages\\",
+      "outputPath": "D:\\repos\\CC_Project_St_Ho\\CloudComputingProject\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/emanuelstoisser/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\emanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1029,7 +1035,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

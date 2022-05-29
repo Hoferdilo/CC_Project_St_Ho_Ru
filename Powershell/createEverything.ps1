@@ -25,6 +25,18 @@ $consistencyLevel = "Session"
 #Azure Function
 $nameOfFunction1 = 'ichmagzuegefunction1'
 $nameOfFunction2 = 'ichmagzuegefunction2'
+#VM
+$SubnetName = "ZuegeSubnet"
+$SubnetRange = "192.168.1.0/24"
+$VNetName = "ZuegerVMNetwork"
+$VNetRange = "192.168.0.0/16"
+$PublicIPName = "ZuegePublicIP"
+$NSGName = "ZuegeNSG"
+$NICName = "ZuegeNIC"
+$ComputerName = "ZuegeSRV01"
+$VMName = "ZuegeSRV01"
+$VMSize = "Standard_DS2_v2"
+$VMImage = "MicrosoftWindowsServer:WindowsServer:2022-datacenter-azure-edition:latest"
 #Git
 $gitRepo = "https://github.com/Hoferdilo/CC_Project_St_Ho.git"
 #Connect
@@ -61,5 +73,16 @@ New-AzCosmosDBSqlContainer -ResourceGroupName $rgName -AccountName $cosmosDB.Nam
 New-AzFunctionApp -Name $nameOfFunction1 -ResourceGroupName $rgName -StorageAccount $storageAccount.StorageAccountName -Runtime dotnet -FunctionsVersion 3 -Location $loc
 New-AzFunctionApp -Name $nameOfFunction2 -ResourceGroupName $rgName -StorageAccount $storageAccount.StorageAccountName -Runtime dotnet -FunctionsVersion 3 -Location $loc
 
+#Create VM
+$SubnetConfig = New-AzVirtualNetworkSubnetConfig -Name $SubnetName -AddressPrefix $SubnetRange
+$VirtualNetwork = New-AzVirtualNetwork -ResourceGroupName $rgName -Location $loc -Name $VNetName -AddressPrefix $VNetRange -Subnet $SubnetConfig
+$PublicIP = New-AzPublicIpAddress -ResourceGroupName $rgName -Location $loc -AllocationMethod "Dynamic" -Name $PublicIPName
+$SecurityGroupRule = New-AzNetworkSecurityRuleConfig -Name "RDP-Rule" -Description "Allow RDP" -Access "Allow" -Protocol "TCP" -Direction "Inbound" -Priority 100 -DestinationPortRange 3389 -SourceAddressPrefix "*" -SourcePortRange "*" -DestinationAddressPrefix "*"
+$NetworkSG = New-AzNetworkSecurityGroup -ResourceGroupName $rgName -Location $loc -Name $NSGName -SecurityRules $SecurityGroupRule
+$NetworkInterface = New-AzNetworkInterface -Name $NICName -ResourceGroupName $rgName -Location $loc -SubnetId $VirtualNetwork.Subnets[0].Id -PublicIpAddressId $PublicIP.Id -NetworkSecurityGroupId $NetworkSG.Id
+$Username = "myAdminUser"
+$Password = 'ichmagZuege1!' | ConvertTo-SecureString -Force -AsPlainText
+$Credential = New-Object -TypeName PSCredential -ArgumentList ($Username, $Password)
+New-AzVm -ResourceGroupName $rgName -Name $VMName -Location $loc -VirtualNetworkName $VNetName -SubnetName $SubnetName -SecurityGroupName $SecurityGroupName -PublicIpAddressName $PublicIpAddressName -ImageName $VMImage  -Credential $Credential
 
 
