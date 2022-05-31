@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\CC_Project_St_Ho\\CloudComputingProject\\CloudComputingProject.csproj": {}
+    "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj": {}
   },
   "projects": {
-    "D:\\repos\\CC_Project_St_Ho\\CloudComputingProject\\CloudComputingProject.csproj": {
+    "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\CC_Project_St_Ho\\CloudComputingProject\\CloudComputingProject.csproj",
+        "projectUniqueName": "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj",
         "projectName": "CloudComputingProject",
-        "projectPath": "D:\\repos\\CC_Project_St_Ho\\CloudComputingProject\\CloudComputingProject.csproj",
-        "packagesPath": "C:\\Users\\emanuel\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\CC_Project_St_Ho\\CloudComputingProject\\obj\\",
+        "projectPath": "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\CloudComputingProject.csproj",
+        "packagesPath": "C:\\Users\\Hofer Julian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hofer Julian\\Documents\\FH\\CC\\Projekt\\CloudComputingProject\\CloudComputingProject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\emanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hofer Julian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,6 +60,10 @@
               "target": "Package",
               "version": "[12.10.0, )"
             },
+            "Microsoft.EntityFrameworkCore.Cosmos": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.3.1, )"
@@ -86,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

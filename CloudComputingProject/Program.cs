@@ -1,5 +1,7 @@
+using CloudComputingProject.Infrastructure;
 using CloudComputingProject.Model.Profile;
 using CloudComputingProject.Service;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<TrainProfile>());
 builder.Services.AddTransient<ITrainService, TrainService>();
 builder.Services.AddTransient<IQueueService, QueueService>();
+builder.Services.AddTransient<IStationService, StationService>();
+var accountEndpoint = builder.Configuration["CosmosDb:Account"];
+var accountKey = builder.Configuration["CosmosDb:Key"];
+var dbName = builder.Configuration["CosmosDb:dbName"];
+builder.Services.AddDbContext<TrainDbContext>(x => x.UseCosmos(accountEndpoint, accountKey, dbName));
 
 var app = builder.Build();
 
